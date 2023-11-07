@@ -3,23 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/nav_splash_screen">
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.devanshusuthar.uniguide.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/nav_splash_screen"
+        android:name="com.devanshusuthar.uniguide.SplashScreenFragment"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_nav_splash_screen_to_nav_login"
+            app:destination="@id/nav_login" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.devanshusuthar.uniguide.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.devanshusuthar.uniguide.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_login"
+        android:name="com.devanshusuthar.uniguide.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" />
 </navigation>

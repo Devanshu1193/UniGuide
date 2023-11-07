@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreenFragment">
+
 
     <VideoView
         android:id="@+id/introVideo"
@@ -23,7 +24,12 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="false"
         android:duplicateParentState="false"
-        android:src="@drawable/message" />
+        android:scaleType="center"
+        android:src="@drawable/message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
