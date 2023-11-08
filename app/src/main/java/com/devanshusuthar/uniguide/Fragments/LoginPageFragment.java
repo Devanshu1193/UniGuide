@@ -1,4 +1,4 @@
-package com.devanshusuthar.uniguide;
+package com.devanshusuthar.uniguide.Fragments;
 
 import android.os.Bundle;
 
@@ -7,13 +7,21 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
+
+import com.devanshusuthar.uniguide.R;
+import com.devanshusuthar.uniguide.StringArray;
+import com.google.android.material.textfield.TextInputLayout;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LoginPage#newInstance} factory method to
+ * Use the {@link LoginPageFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LoginPage extends Fragment {
+public class LoginPageFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +32,7 @@ public class LoginPage extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LoginPage() {
+    public LoginPageFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +45,8 @@ public class LoginPage extends Fragment {
      * @return A new instance of fragment LoginPage.
      */
     // TODO: Rename and change types and number of parameters
-    public static LoginPage newInstance(String param1, String param2) {
-        LoginPage fragment = new LoginPage();
+    public static LoginPageFragment newInstance(String param1, String param2) {
+        LoginPageFragment fragment = new LoginPageFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,6 +68,27 @@ public class LoginPage extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_page, container, false);
+
+        Spinner spinner = view.findViewById(R.id.city_dropdown);
+        Spinner provinceSpinner = view.findViewById(R.id.city_dropdown);
+
+        StringArray provinces = new StringArray(getContext(), "a", "b", "c");
+        StringArray citiesOntario = new StringArray(getContext(), "a", "b", "c");
+
+        provinceSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String province = provinces.getItem(i);
+
+                switch (province) {
+                    case "Ontario":
+                        spinner.setAdapter(citiesOntario);
+                        break;
+                }
+            }
+        });
+
+        spinner.setAdapter(citiesOntario);
 
         return view;
     }

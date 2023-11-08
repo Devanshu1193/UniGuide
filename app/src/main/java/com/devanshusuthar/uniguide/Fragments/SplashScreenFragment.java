@@ -1,4 +1,4 @@
-package com.devanshusuthar.uniguide;
+package com.devanshusuthar.uniguide.Fragments;
 
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -16,6 +16,8 @@ import android.widget.VideoView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+
+import com.devanshusuthar.uniguide.R;
 
 public class SplashScreenFragment extends Fragment {
 
@@ -40,6 +42,7 @@ public class SplashScreenFragment extends Fragment {
         messageImage = view.findViewById(R.id.messageImage);
 
         String introPath = "android.resource://com.devanshusuthar.uniguide/" + R.raw.intro;
+        // introPath = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.intro; <- also can be used
 
         Uri uri = Uri.parse(introPath);
         videoView.setVideoURI(uri);

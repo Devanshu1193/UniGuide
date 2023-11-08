@@ -6,7 +6,7 @@
     app:startDestination="@id/nav_splash_screen">
     <fragment
         android:id="@+id/nav_splash_screen"
-        android:name="com.devanshusuthar.uniguide.SplashScreenFragment"
+        android:name="com.devanshusuthar.uniguide.Fragments.SplashScreenFragment"
         android:label="activity_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_login"
-        android:name="com.devanshusuthar.uniguide.LoginPage"
+        android:name="com.devanshusuthar.uniguide.Fragments.LoginPageFragment"
         android:label="fragment_login_page"
         tools:layout="@layout/fragment_login_page" />
 </navigation>
