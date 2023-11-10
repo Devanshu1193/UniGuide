@@ -30,13 +30,9 @@
 
         <TextView
             android:id="@+id/login_country_title"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="4sp"
-            android:layout_weight="1"
             android:fontFamily="@font/assistant_semibold"
-            android:paddingLeft="30sp"
-            android:paddingRight="-90sp"
             android:text="@string/login_fullName_title"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
@@ -73,13 +69,9 @@
 
         <TextView
             android:id="@+id/login_city_title"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="4sp"
-            android:layout_weight="1"
             android:fontFamily="@font/assistant_semibold"
-            android:paddingLeft="30sp"
-            android:paddingRight="-90sp"
             android:text="@string/login_country_title"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
@@ -111,13 +103,9 @@
 
         <TextView
             android:id="@+id/login_fullName_title"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="4sp"
-            android:layout_weight="1"
             android:fontFamily="@font/assistant_semibold"
-            android:paddingLeft="30sp"
-            android:paddingRight="-90sp"
             android:text="@string/login_country_title"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
@@ -127,10 +115,10 @@
 
         <Spinner
             android:id="@+id/city_dropdown"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:background="@android:drawable/spinner_dropdown_background"
+            android:outlineProvider="paddedBounds"
             android:spinnerMode="dropdown" />
 
     </LinearLayout>

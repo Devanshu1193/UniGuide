@@ -12,5 +12,6 @@ public class StringArray extends ArrayAdapter<String> {
         super(context,android.R.layout.simple_spinner_item);
         this.addAll(strings);
         this.setDropDownViewResource(android.R.layout.simple_spinner_item);
+//        this.setDropDownViewResource(R.layout.c);
     }
 }

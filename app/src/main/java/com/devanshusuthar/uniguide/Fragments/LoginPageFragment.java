@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import com.devanshusuthar.uniguide.MainActivity;
 import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.StringArray;
 import com.google.android.material.textfield.TextInputLayout;
@@ -69,15 +70,17 @@ public class LoginPageFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_page, container, false);
 
+        MainActivity.getAppBar().show();
+
         Spinner spinner = view.findViewById(R.id.city_dropdown);
         Spinner provinceSpinner = view.findViewById(R.id.city_dropdown);
 
         StringArray provinces = new StringArray(getContext(), "a", "b", "c");
         StringArray citiesOntario = new StringArray(getContext(), "a", "b", "c");
 
-        provinceSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        provinceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String province = provinces.getItem(i);
 
                 switch (province) {
@@ -86,6 +89,9 @@ public class LoginPageFragment extends Fragment {
                         break;
                 }
             }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {}
         });
 
         spinner.setAdapter(citiesOntario);
