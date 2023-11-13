@@ -3,6 +3,7 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,8 +76,12 @@ public class LoginPageFragment extends Fragment {
         Spinner spinner = view.findViewById(R.id.city_dropdown);
         Spinner provinceSpinner = view.findViewById(R.id.city_dropdown);
 
-        StringArray provinces = new StringArray(getContext(), "a", "b", "c");
-        StringArray citiesOntario = new StringArray(getContext(), "a", "b", "c");
+        StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Manitoba", "New Brunswick","Newfoundland and Labrador", "Nova Scotia", "Ontario");
+        StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", " Red Deer", "Lethbridge", "St. Albert.");
+        StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby", "Richmond", "Abbotsford");
+        StringArray citiesManitoba = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby", "Richmond", "Abbotsford");
+
+
 
         provinceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -84,9 +89,11 @@ public class LoginPageFragment extends Fragment {
                 String province = provinces.getItem(i);
 
                 switch (province) {
-                    case "Ontario":
-                        spinner.setAdapter(citiesOntario);
+                    case "Alberta":
+                        spinner.setAdapter(citiesAlberta);
                         break;
+                    case "British Columbia":
+                        spinner.setAdapter(citiesBC);
                 }
             }
 
@@ -94,7 +101,12 @@ public class LoginPageFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> adapterView) {}
         });
 
-        spinner.setAdapter(citiesOntario);
+        spinner.setAdapter(citiesAlberta);
+        spinner.setAdapter(citiesBC);
+
+//        Bundle bundle = new Bundle();
+//        bundle.putString("CITY", citySelected);
+//        Navigation.findNavController(view).navigate(R.id.nav_somewhere, bundle);
 
         return view;
     }
