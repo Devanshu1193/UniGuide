@@ -3,20 +3,17 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.devanshusuthar.uniguide.MainActivity;
 import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.StringArray;
-import com.google.android.material.textfield.TextInputLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,8 +70,8 @@ public class LoginPageFragment extends Fragment {
 
         MainActivity.getAppBar().show();
 
-        Spinner spinner = view.findViewById(R.id.city_dropdown);
-        Spinner provinceSpinner = view.findViewById(R.id.city_dropdown);
+        Spinner citySpinner = view.findViewById(R.id.city_dropDown);
+        Spinner provinceSpinner = view.findViewById(R.id.province_dropDown);
 
         StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Manitoba", "New Brunswick","Newfoundland and Labrador", "Nova Scotia", "Ontario");
         StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", " Red Deer", "Lethbridge", "St. Albert.");
@@ -88,12 +85,13 @@ public class LoginPageFragment extends Fragment {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String province = provinces.getItem(i);
 
+
                 switch (province) {
                     case "Alberta":
-                        spinner.setAdapter(citiesAlberta);
+                        citySpinner.setAdapter(citiesAlberta);
                         break;
                     case "British Columbia":
-                        spinner.setAdapter(citiesBC);
+                        citySpinner.setAdapter(citiesBC);
                 }
             }
 
@@ -101,8 +99,8 @@ public class LoginPageFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> adapterView) {}
         });
 
-        spinner.setAdapter(citiesAlberta);
-        spinner.setAdapter(citiesBC);
+        provinceSpinner.setAdapter(provinces);
+        citySpinner.setAdapter(citiesAlberta);
 
 //        Bundle bundle = new Bundle();
 //        bundle.putString("CITY", citySelected);

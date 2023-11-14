@@ -16,4 +16,7 @@
     <string name="login_fullName_title">Full Name :</string>
     <string name="login_country_title">Country :</string>
     <string name="canada_text">Canada</string>
+    <string name="login_province_title">Province :</string>
+    <string name="login_city_title">City :</string>
+    <string name="login_button">Login</string>
 </resources>

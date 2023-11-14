@@ -29,7 +29,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/login_country_title"
+            android:id="@+id/login_name_title"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/assistant_semibold"
@@ -68,7 +68,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/login_city_title"
+            android:id="@+id/login_country_title"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/assistant_semibold"
@@ -80,7 +80,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/city_text"
+            android:id="@+id/country_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -97,16 +97,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/login_fullName_title"
+            android:id="@+id/login_province_title"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/assistant_semibold"
-            android:text="@string/login_country_title"
+            android:text="@string/login_province_title"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -114,7 +113,7 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/city_dropdown"
+            android:id="@+id/province_dropDown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/spinner_dropdown_background"
@@ -122,6 +121,41 @@
             android:spinnerMode="dropdown" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_city_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_city_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/city_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:outlineProvider="paddedBounds"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
