@@ -63,6 +63,12 @@ public class LoginPageFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity.getAppBar().show();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
