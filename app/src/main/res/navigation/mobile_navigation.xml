@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/nav_splash_screen"
         android:name="com.devanshusuthar.uniguide.Fragments.SplashScreenFragment"
-        android:label="activity_splash_screen"
+        android:label="Introduction"
         tools:layout="@layout/fragment_splash_screen" >
         <action
             android:id="@+id/action_nav_splash_screen_to_nav_login"
@@ -16,6 +16,15 @@
     <fragment
         android:id="@+id/nav_login"
         android:name="com.devanshusuthar.uniguide.Fragments.LoginPageFragment"
-        android:label="fragment_login_page"
-        tools:layout="@layout/fragment_login_page" />
+        android:label="Login Info."
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_nav_login_to_mainMenuBlankFragment"
+            app:destination="@id/nav_main_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_main_menu"
+        android:name="com.devanshusuthar.uniguide.Fragments.MainMenuBlankFragment"
+        android:label="fragment_main_menu_blank"
+        tools:layout="@layout/fragment_main_menu_blank" />
 </navigation>

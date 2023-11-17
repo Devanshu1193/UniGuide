@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/assistant_semibold</item>
+        <item>@font/cardo</item>
     </array>
 </resources>

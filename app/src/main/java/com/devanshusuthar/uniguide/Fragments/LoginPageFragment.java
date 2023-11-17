@@ -3,6 +3,7 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -79,10 +80,15 @@ public class LoginPageFragment extends Fragment {
         Spinner citySpinner = view.findViewById(R.id.city_dropDown);
         Spinner provinceSpinner = view.findViewById(R.id.province_dropDown);
 
-        StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Manitoba", "New Brunswick","Newfoundland and Labrador", "Nova Scotia", "Ontario");
-        StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", " Red Deer", "Lethbridge", "St. Albert.");
-        StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby", "Richmond", "Abbotsford");
-        StringArray citiesManitoba = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby", "Richmond", "Abbotsford");
+        // String Array of Provinces in Canada
+        StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Nova Scotia", "Ontario", "Manitoba");
+
+        // Sting Array of Various Cities in Canada
+        StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", " Red Deer");
+        StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
+        StringArray citiesManitoba = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
+        StringArray citiesOntario = new StringArray(getContext(),"Toronto","Brampton","Windsor");
+        StringArray citiesNovaScotia = new StringArray(getContext(), "Halifax","Cape Breton","New Glasgow");
 
 
 
@@ -98,6 +104,16 @@ public class LoginPageFragment extends Fragment {
                         break;
                     case "British Columbia":
                         citySpinner.setAdapter(citiesBC);
+                        break;
+                    case "Nova Scotia":
+                        citySpinner.setAdapter(citiesNovaScotia);
+                        break;
+                    case "Ontario":
+                        citySpinner.setAdapter(citiesOntario);
+                        break;
+                    case "Manitoba":
+                        citySpinner.setAdapter(citiesManitoba);
+                        break;
                 }
             }
 
@@ -107,6 +123,13 @@ public class LoginPageFragment extends Fragment {
 
         provinceSpinner.setAdapter(provinces);
         citySpinner.setAdapter(citiesAlberta);
+
+        view.findViewById(R.id.main_login_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_login_to_mainMenuBlankFragment);
+            }
+        });
 
 //        Bundle bundle = new Bundle();
 //        bundle.putString("CITY", citySelected);
