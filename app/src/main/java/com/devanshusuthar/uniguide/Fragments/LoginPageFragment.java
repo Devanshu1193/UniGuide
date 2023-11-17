@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Spinner;
+import android.widget.Switch;
 
 import com.devanshusuthar.uniguide.MainActivity;
 import com.devanshusuthar.uniguide.R;
@@ -79,16 +80,39 @@ public class LoginPageFragment extends Fragment {
 
         Spinner citySpinner = view.findViewById(R.id.city_dropDown);
         Spinner provinceSpinner = view.findViewById(R.id.province_dropDown);
+        Spinner collegeSpinner = view.findViewById(R.id.college_dropDown);
 
         // String Array of Provinces in Canada
-        StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Nova Scotia", "Ontario", "Manitoba");
+        StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Nova Scotia", "Ontario");
+
 
         // Sting Array of Various Cities in Canada
-        StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", " Red Deer");
+        StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", "Red Deer");
         StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
-        StringArray citiesManitoba = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
+//        StringArray citiesManitoba = new StringArray(getContext(),"Winnipeg", "Brandon", "Thompson");
         StringArray citiesOntario = new StringArray(getContext(),"Toronto","Brampton","Windsor");
         StringArray citiesNovaScotia = new StringArray(getContext(), "Halifax","Cape Breton","New Glasgow");
+
+        // List 0f Universities in ALBERTA
+        StringArray collegeInCalgary = new StringArray(getContext(),"University of Calgary", "Bow Valley College", "Alberta University of Arts");
+        StringArray collegeInEdmonton = new StringArray(getContext(),"University of Alberta", "MacEwan University", "Concordia University of Edmonton");
+        StringArray collegeInRedDeer = new StringArray(getContext(),"Red Deer College");
+
+        // List 0f Universities in BRITISH COLUMBIA
+        StringArray collegeInVancouver = new StringArray(getContext(),"The University of British Columbia", "Simon Fraser University", "Capilano University");
+        StringArray collegeInSurrey = new StringArray(getContext(),"CDI College Surrey", "Douglas College", "Brighton College");
+        StringArray collegeInBurnaby = new StringArray(getContext(),"Fraser International College", "British Columbia Institute of Tech.", "Alexander College");
+
+        // List 0f Universities in NOVA SCOTIA
+        StringArray collegeInHalifax = new StringArray(getContext(),"Mount Saint Vincent University", "Saint Mary/'s University", "Dalhousie University");
+        StringArray collegeInCapeBreton = new StringArray(getContext(),"Cape Breton University");
+        StringArray collegeInNewGlasgow = new StringArray(getContext(),"Cape Breton University", "St. Francis Xavier University", "Nova Scotia Community College");
+
+        // List 0f Universities in ONTARIO
+        StringArray collegeInToronto = new StringArray(getContext(),"Seneca College", "University of Toronto", "Humber College");
+        StringArray collegeInBrampton = new StringArray(getContext(),"Sheridan College", "Centennial College", "Cambrian College");
+        StringArray collegeInWindsor = new StringArray(getContext(),"University of Windsor", "Saint Clair College");
+
 
 
 
@@ -98,21 +122,76 @@ public class LoginPageFragment extends Fragment {
                 String province = provinces.getItem(i);
 
 
+
                 switch (province) {
                     case "Alberta":
                         citySpinner.setAdapter(citiesAlberta);
+                        String collegeCitiesAlberta = citiesAlberta.getItem(i);
+                        switch (collegeCitiesAlberta) {
+                            case "Calgary":
+                                collegeSpinner.setAdapter(collegeInCalgary);
+                                break;
+                            case "Edmonton":
+                                collegeSpinner.setAdapter(collegeInEdmonton);
+                                break;
+                            case "Red Deer":
+                                collegeSpinner.setAdapter(collegeInRedDeer);
+                                break;
+                        }
                         break;
+
                     case "British Columbia":
                         citySpinner.setAdapter(citiesBC);
+
+                        String collegeCitiesBC = citiesBC.getItem(i);
+                        switch (collegeCitiesBC) {
+                            case "Vancouver":
+                                collegeSpinner.setAdapter(collegeInVancouver);
+                                break;
+                            case "Surrey":
+                                collegeSpinner.setAdapter(collegeInSurrey);
+                                break;
+                            case "Burnaby":
+                                collegeSpinner.setAdapter(collegeInBurnaby);
+                                break;
+                        }
+
                         break;
+
                     case "Nova Scotia":
                         citySpinner.setAdapter(citiesNovaScotia);
+
+                        String collegeCitiesNovaScotia = citiesNovaScotia.getItem(i);
+                        switch (collegeCitiesNovaScotia) {
+                            case "Halifax":
+                                collegeSpinner.setAdapter(collegeInHalifax);
+                                break;
+                            case "Cape Breton":
+                                collegeSpinner.setAdapter(collegeInCapeBreton);
+                                break;
+                            case "New Glasgow":
+                                collegeSpinner.setAdapter(collegeInNewGlasgow);
+                                break;
+                        }
+
                         break;
+
                     case "Ontario":
                         citySpinner.setAdapter(citiesOntario);
-                        break;
-                    case "Manitoba":
-                        citySpinner.setAdapter(citiesManitoba);
+
+                        String collegeCitiesOntario = citiesOntario.getItem(i);
+                        switch (collegeCitiesOntario) {
+                            case "Toronto":
+                                collegeSpinner.setAdapter(collegeInToronto);
+                                break;
+                            case "Brampton":
+                                collegeSpinner.setAdapter(collegeInBrampton);
+                                break;
+                            case "Windsor":
+                                collegeSpinner.setAdapter(collegeInWindsor);
+                                break;
+                        }
+
                         break;
                 }
             }
