@@ -18,6 +18,12 @@ import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.StringArray;
 
 /**
+ * This is thw login page
+ * @author Devanshu
+ * @date :
+ */
+
+/**
  * A simple {@link Fragment} subclass.
  * Use the {@link LoginPageFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -89,7 +95,6 @@ public class LoginPageFragment extends Fragment {
         // Sting Array of Various Cities in Canada
         StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", "Red Deer");
         StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
-//        StringArray citiesManitoba = new StringArray(getContext(),"Winnipeg", "Brandon", "Thompson");
         StringArray citiesOntario = new StringArray(getContext(),"Toronto","Brampton","Windsor");
         StringArray citiesNovaScotia = new StringArray(getContext(), "Halifax","Cape Breton","New Glasgow");
 
@@ -202,6 +207,7 @@ public class LoginPageFragment extends Fragment {
 
         provinceSpinner.setAdapter(provinces);
         citySpinner.setAdapter(citiesAlberta);
+
 
         view.findViewById(R.id.main_login_button).setOnClickListener(new View.OnClickListener() {
             @Override

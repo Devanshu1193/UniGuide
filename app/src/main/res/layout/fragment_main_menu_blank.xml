@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/basic"
     tools:context=".Fragments.AccommodationFragment">
 
     <TextView
@@ -12,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
-        android:background="#747679"
-        android:fontFamily="@font/cardo"
+        android:fontFamily="@font/alata"
         android:text="@string/main_menu_title"
         android:textAlignment="center"
         android:textColor="#FFFEFE"
@@ -21,73 +21,60 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/map"
+        android:id="@+id/accomodation_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:backgroundTint="@color/cardview_shadow_end_color"
         android:paddingTop="6dp"
-        android:text="@string/location_title"
-        android:textColor="@color/colorPrimary"
+        android:text="@string/accomodation_button"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:cornerRadius="50dp"
-        app:strokeColor="@color/primary"
+        app:strokeColor="@color/white"
         app:strokeWidth="3dp" />
 
     <Button
-        android:id="@+id/email"
+        android:id="@+id/initial_steps_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/email_title"
-        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/initial_steps_button"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:cornerRadius="50dp"
-        app:strokeColor="@color/primary"
+        app:strokeColor="@color/white"
         app:strokeWidth="3dp" />
 
     <Button
-        android:id="@+id/message"
+        android:id="@+id/supermarket_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/message_title"
-        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/supermarket_button"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:cornerRadius="50dp"
-        app:strokeColor="@color/primary"
+        app:strokeColor="@color/white"
         app:strokeWidth="3dp" />
 
     <Button
-        android:id="@+id/call"
+        android:id="@+id/settings_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/call_title"
-        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/settings_button"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:cornerRadius="50dp"
-        app:strokeColor="@color/primary"
+        app:strokeColor="@color/white"
         app:strokeWidth="3dp" />
 
-    <Button
-        android:id="@+id/calendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="70dp"
-        android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/calender_title"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:cornerRadius="50dp"
-        app:strokeColor="@color/primary"
-        app:strokeWidth="3dp" />
 </LinearLayout>

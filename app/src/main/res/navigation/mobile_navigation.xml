@@ -25,6 +25,21 @@
     <fragment
         android:id="@+id/nav_main_menu"
         android:name="com.devanshusuthar.uniguide.Fragments.MainMenuBlankFragment"
-        android:label="fragment_main_menu_blank"
+        android:label="Main Menu"
         tools:layout="@layout/fragment_main_menu_blank" />
+    <fragment
+        android:id="@+id/nav_initial_steps"
+        android:name="com.devanshusuthar.uniguide.Viewpager.InitialStepsFragment"
+        android:label="Initial Steps"
+        tools:layout="@layout/fragment_initial_steps" />
+    <fragment
+        android:id="@+id/nav_supermarkets"
+        android:name="com.devanshusuthar.uniguide.Fragments.SupermarketsFragment"
+        android:label="Supermarkets"
+        tools:layout="@layout/fragment_supermarkets" />
+    <fragment
+        android:id="@+id/nav_accommodation"
+        android:name="com.devanshusuthar.uniguide.Fragments.AccommodationFragment"
+        android:label="Accommodation"
+        tools:layout="@layout/fragment_accommodation" />
 </navigation>
