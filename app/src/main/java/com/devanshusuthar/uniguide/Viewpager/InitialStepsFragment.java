@@ -17,6 +17,12 @@ import com.devanshusuthar.uniguide.R;
  * Use the {@link InitialStepsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+/**
+ * Created Steps using View Pager which will show what are the initial steps that you have to carry out when you reach in canada.
+ * @author Devanshu
+ * @date Nov 17' 23
+ */
 public class InitialStepsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -67,7 +73,6 @@ public class InitialStepsFragment extends Fragment {
         TextView stepsTitleView = view.findViewById(R.id.steps_title);
 //        ImageView imageView = view.findViewById(R.id.imageView6);
         TextView stepsDescView = view.findViewById(R.id.steps_desc);
-
 
         stepsTitleView.setText(stepsTitle);
         stepsDescView.setText(stepsDesc);

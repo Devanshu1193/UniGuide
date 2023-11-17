@@ -17,6 +17,13 @@ import com.google.android.material.tabs.TabLayoutMediator;
  * A simple {@link Fragment} subclass.
  * Use the {@link VPHostFragment#newInstance} factory method to
  * create an instance of this fragment.
+ *
+ */
+
+/**
+ * Created Tab layout init
+ * @author Devanshu
+ * @date Nov 17' 23
  */
 public class VPHostFragment extends Fragment {
 
@@ -66,6 +73,8 @@ public class VPHostFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_v_p_host, container, false);
+
+        // Tab layout
         TabLayout tabLayout = view.findViewById(R.id.fact_tab_layout);
         new TabLayoutMediator(tabLayout, viewPager2, ((tab, position) ->
                 tab.setText("Steps " + (position+1)))).attach();
