@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class CreateViewAdapterSteps extends FragmentStateAdapter {
+
     public CreateViewAdapterSteps(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
     }
@@ -22,6 +23,7 @@ public class CreateViewAdapterSteps extends FragmentStateAdapter {
             default: return InitialStepsFragment.newInstance("Error","Page not found");
         }
     }
+
 
     @Override
     public int getItemCount() {

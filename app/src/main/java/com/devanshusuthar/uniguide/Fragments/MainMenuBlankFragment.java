@@ -1,9 +1,12 @@
 package com.devanshusuthar.uniguide.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.devanshusuthar.uniguide.R;
+import com.devanshusuthar.uniguide.Viewpager.InitialStepsFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +23,6 @@ import com.devanshusuthar.uniguide.R;
  */
 public class MainMenuBlankFragment extends Fragment {
 
-    FragmentManager fm;
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -68,17 +71,17 @@ public class MainMenuBlankFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_main_menu_blank, container, false);
 
-        fm = getActivity().getSupportFragmentManager();
 
         // Accommodation Button
         Button accommodationButton = view.findViewById(R.id.accomodation_button);
         accommodationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fm.beginTransaction()
-                        .replace(R.id.nav_main_menu, new AccommodationFragment())
-                        .addToBackStack(null)
-                        .commit();
+                // Replace the current fragment with a new one
+//                replaceFragment(new AccommodationFragment());
+
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_accommodation);
+
             }
         });
 
@@ -87,7 +90,8 @@ public class MainMenuBlankFragment extends Fragment {
         initialStepButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//                replaceFragment(new InitialStepsFragment());
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_initial_steps);
             }
         });
 
@@ -97,7 +101,8 @@ public class MainMenuBlankFragment extends Fragment {
         supermarketButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//                replaceFragment(new SupermarketsFragment());
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_supermarkets);
             }
         });
 
@@ -113,5 +118,19 @@ public class MainMenuBlankFragment extends Fragment {
 
 
         return view;
+    }
+
+
+    // Created a function to go from one fragment to another and to add transitions
+    private void replaceFragment(Fragment fragment) {
+        // Get the FragmentManager and start a transaction
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+        // Replace the current fragment with the new one
+        fragmentTransaction.replace(R.id.main_menu_id, fragment);
+
+        // Commit the transaction
+        fragmentTransaction.commit();
     }
 }
