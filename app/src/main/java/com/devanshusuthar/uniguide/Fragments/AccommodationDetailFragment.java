@@ -3,24 +3,19 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.preference.PreferenceManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.devanshusuthar.uniguide.R;
-import com.devanshusuthar.uniguide.Viewpager.CustomAccommodationAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link AccommodationFragment#newInstance} factory method to
+ * Use the {@link AccommodationDetailFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AccommodationFragment extends Fragment {
+public class AccommodationDetailFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,7 +26,7 @@ public class AccommodationFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public AccommodationFragment() {
+    public AccommodationDetailFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +36,11 @@ public class AccommodationFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment AccommodationFragment.
+     * @return A new instance of fragment AccommodationDetailFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static AccommodationFragment newInstance(String param1, String param2) {
-        AccommodationFragment fragment = new AccommodationFragment();
+    public static AccommodationDetailFragment newInstance(String param1, String param2) {
+        AccommodationDetailFragment fragment = new AccommodationDetailFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,31 +60,12 @@ public class AccommodationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_accommodation, container, false);
+       View view = inflater.inflate(R.layout.fragment_accommodation_detail, container, false);
+       Bundle extras = getArguments();
+       if (extras != null) {
 
-        Bundle bundle = getArguments();
-        if (bundle == null) return view;
+       }
 
-        String city = bundle.getString("CITY");
-
-        switch (city) {
-            case "Windsor":
-//                someText.text = "";
-                break;
-        }
-        RecyclerView recyclerView = view.findViewById(R.id.recycler);
-
-        boolean staggered = PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("staggeredLayout",false);
-
-        if (staggered){
-            recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,1));
-        }else {
-            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        }
-
-        recyclerView.setAdapter(new CustomAccommodationAdapter(accomm));
         return view;
     }
 }
