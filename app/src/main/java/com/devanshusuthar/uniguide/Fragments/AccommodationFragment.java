@@ -3,12 +3,17 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.devanshusuthar.uniguide.R;
+import com.devanshusuthar.uniguide.Viewpager.CustomAccommodationAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,8 +78,18 @@ public class AccommodationFragment extends Fragment {
 //                someText.text = "";
                 break;
         }
+        RecyclerView recyclerView = view.findViewById(R.id.recycler);
 
+        boolean staggered = PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("staggeredLayout",false);
 
+        if (staggered){
+            recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,1));
+        }else {
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        }
+
+        recyclerView.setAdapter(new CustomAccommodationAdapter(city));
         return view;
     }
 }
