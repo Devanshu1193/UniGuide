@@ -184,7 +184,7 @@ public class LoginPageFragment extends Fragment {
                     case "Ontario":
                         citySpinner.setAdapter(citiesOntario);
 
-                        String collegeCitiesOntario = citiesOntario.getItem(i);
+                        String collegeCitiesOntario = citiesOntario.getItem(i-1);
                         switch (collegeCitiesOntario) {
                             case "Toronto":
                                 collegeSpinner.setAdapter(collegeInToronto);

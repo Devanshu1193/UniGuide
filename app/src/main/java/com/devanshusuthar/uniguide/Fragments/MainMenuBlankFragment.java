@@ -91,7 +91,7 @@ public class MainMenuBlankFragment extends Fragment {
             @Override
             public void onClick(View view) {
 //                replaceFragment(new InitialStepsFragment());
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_initial_steps);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_vphost);
             }
         });
 
