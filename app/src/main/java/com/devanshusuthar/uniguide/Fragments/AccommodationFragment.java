@@ -8,10 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.devanshusuthar.uniguide.Accommodations;
 import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.Viewpager.CustomAccommodationAdapter;
 
@@ -72,12 +74,8 @@ public class AccommodationFragment extends Fragment {
         if (bundle == null) return view;
 
         String city = bundle.getString("CITY");
+        Log.d("citytest", "onCreateView: " + city);
 
-        switch (city) {
-            case "Windsor":
-//                someText.text = "";
-                break;
-        }
         RecyclerView recyclerView = view.findViewById(R.id.recycler);
 
         boolean staggered = PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("staggeredLayout",false);
@@ -89,7 +87,14 @@ public class AccommodationFragment extends Fragment {
 
         }
 
-        recyclerView.setAdapter(new CustomAccommodationAdapter(accomm));
+        switch (city) {
+            case "Windsor":
+//                someText.text = "";
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+        }
+
+//        recyclerView.setAdapter(new CustomAccommodationAdapter(accomm));
         return view;
     }
 }

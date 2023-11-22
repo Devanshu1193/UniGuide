@@ -70,7 +70,8 @@ public class MainMenuBlankFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_main_menu_blank, container, false);
-
+        Bundle bundle = getArguments();
+        if (bundle == null) return view;
 
         // Accommodation Button
         Button accommodationButton = view.findViewById(R.id.accomodation_button);
@@ -80,7 +81,7 @@ public class MainMenuBlankFragment extends Fragment {
                 // Replace the current fragment with a new one
 //                replaceFragment(new AccommodationFragment());
 
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_accommodation);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_accommodation, bundle);
 
             }
         });
@@ -91,7 +92,7 @@ public class MainMenuBlankFragment extends Fragment {
             @Override
             public void onClick(View view) {
 //                replaceFragment(new InitialStepsFragment());
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_vphost);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_vphost, bundle);
             }
         });
 
@@ -102,7 +103,7 @@ public class MainMenuBlankFragment extends Fragment {
             @Override
             public void onClick(View view) {
 //                replaceFragment(new SupermarketsFragment());
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_supermarkets);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_supermarkets, bundle);
             }
         });
 

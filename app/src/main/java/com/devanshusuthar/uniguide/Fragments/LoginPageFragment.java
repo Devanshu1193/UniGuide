@@ -119,85 +119,80 @@ public class LoginPageFragment extends Fragment {
         StringArray collegeInWindsor = new StringArray(getContext(),"University of Windsor", "Saint Clair College");
 
 
-
-
         provinceSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String province = provinces.getItem(i);
 
-
-
                 switch (province) {
                     case "Alberta":
                         citySpinner.setAdapter(citiesAlberta);
-                        String collegeCitiesAlberta = citiesAlberta.getItem(i);
-                        switch (collegeCitiesAlberta) {
-                            case "Calgary":
-                                collegeSpinner.setAdapter(collegeInCalgary);
-                                break;
-                            case "Edmonton":
-                                collegeSpinner.setAdapter(collegeInEdmonton);
-                                break;
-                            case "Red Deer":
-                                collegeSpinner.setAdapter(collegeInRedDeer);
-                                break;
-                        }
                         break;
 
                     case "British Columbia":
                         citySpinner.setAdapter(citiesBC);
-
-                        String collegeCitiesBC = citiesBC.getItem(i);
-                        switch (collegeCitiesBC) {
-                            case "Vancouver":
-                                collegeSpinner.setAdapter(collegeInVancouver);
-                                break;
-                            case "Surrey":
-                                collegeSpinner.setAdapter(collegeInSurrey);
-                                break;
-                            case "Burnaby":
-                                collegeSpinner.setAdapter(collegeInBurnaby);
-                                break;
-                        }
-
                         break;
 
                     case "Nova Scotia":
                         citySpinner.setAdapter(citiesNovaScotia);
-
-                        String collegeCitiesNovaScotia = citiesNovaScotia.getItem(i);
-                        switch (collegeCitiesNovaScotia) {
-                            case "Halifax":
-                                collegeSpinner.setAdapter(collegeInHalifax);
-                                break;
-                            case "Cape Breton":
-                                collegeSpinner.setAdapter(collegeInCapeBreton);
-                                break;
-                            case "New Glasgow":
-                                collegeSpinner.setAdapter(collegeInNewGlasgow);
-                                break;
-                        }
-
                         break;
 
                     case "Ontario":
                         citySpinner.setAdapter(citiesOntario);
-
-                        String collegeCitiesOntario = citiesOntario.getItem(i-1);
-                        switch (collegeCitiesOntario) {
-                            case "Toronto":
-                                collegeSpinner.setAdapter(collegeInToronto);
-                                break;
-                            case "Brampton":
-                                collegeSpinner.setAdapter(collegeInBrampton);
-                                break;
-                            case "Windsor":
-                                collegeSpinner.setAdapter(collegeInWindsor);
-                                break;
-                        }
-
                         break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {}
+        });
+
+// Created a spinner for city
+        citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                StringArray adapter = (StringArray) citySpinner.getAdapter();
+                String selected = adapter.getItem(i);
+
+                switch (selected) {
+                    case "Calgary":
+                        collegeSpinner.setAdapter(collegeInCalgary);
+                        break;
+                    case "Edmonton":
+                        collegeSpinner.setAdapter(collegeInEdmonton);
+                        break;
+                    case "Red Deer":
+                        collegeSpinner.setAdapter(collegeInRedDeer);
+                        break;
+                    case "Vancouver":
+                        collegeSpinner.setAdapter(collegeInVancouver);
+                        break;
+                    case "Surrey":
+                        collegeSpinner.setAdapter(collegeInSurrey);
+                        break;
+                    case "Burnaby":
+                        collegeSpinner.setAdapter(collegeInBurnaby);
+                        break;
+                    case "Halifax":
+                        collegeSpinner.setAdapter(collegeInHalifax);
+                        break;
+                    case "Cape Breton":
+                        collegeSpinner.setAdapter(collegeInCapeBreton);
+                        break;
+                    case "New Glasgow":
+                        collegeSpinner.setAdapter(collegeInNewGlasgow);
+                        break;
+                    case "Toronto":
+                        collegeSpinner.setAdapter(collegeInToronto);
+                        break;
+                    case "Brampton":
+                        collegeSpinner.setAdapter(collegeInBrampton);
+                        break;
+                    case "Windsor":
+                        collegeSpinner.setAdapter(collegeInWindsor);
+                        break;
+
                 }
             }
 
@@ -212,13 +207,13 @@ public class LoginPageFragment extends Fragment {
         view.findViewById(R.id.main_login_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_nav_login_to_mainMenuBlankFragment);
+                StringArray adapter = (StringArray) citySpinner.getAdapter();
+                Bundle bundle = new Bundle();
+                bundle.putString("CITY", adapter.getItem(citySpinner.getSelectedItemPosition()));
+
+                Navigation.findNavController(view).navigate(R.id.action_nav_login_to_mainMenuBlankFragment, bundle);
             }
         });
-
-//        Bundle bundle = new Bundle();
-//        bundle.putString("CITY", citySelected);
-//        Navigation.findNavController(view).navigate(R.id.nav_somewhere, bundle);
 
         return view;
     }

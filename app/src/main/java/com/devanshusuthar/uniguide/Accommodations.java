@@ -1,57 +1,25 @@
 package com.devanshusuthar.uniguide;
 
-import android.widget.Button;
+import android.content.Intent;
+import android.net.Uri;
 
-import java.io.StringReader;
+import java.util.Arrays;
+import java.util.List;
 
 public class Accommodations {
-    private int drawable;
-    private String title;
-    private String price;
-    private String description;
 
-//    Button callButton = new Button();
-//    Button locationButton = new Button();
-//    Button messageButton = new Button();
-
-
-    public Accommodations(int drawable, String title, String price, String description) {
-        this.drawable = drawable;
-        this.title = title;
-        this.price = price;
-        this.description = description;
+    private static Intent call(String number) {
+        return new Intent(Intent.ACTION_DIAL, Uri.parse(
+                "tel:" + number
+        ));
     }
 
-    public int getDrawable() {
-        return drawable;
-    }
-
-    public void setDrawable(int drawable) {
-        this.drawable = drawable;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public static final List<Accommodation> WINDSOR_ACCOMMODATIONS = Arrays.asList(
+        new Accommodation(R.drawable.basic, "Test 1", "2", "a", call("5190000000")),
+        new Accommodation(R.drawable.basic, "Test 2", "2", "a", new Intent(
+                Intent.ACTION_DIAL,
+                Uri.parse("tel:5190000001")
+        ))
+    );
 
 }
