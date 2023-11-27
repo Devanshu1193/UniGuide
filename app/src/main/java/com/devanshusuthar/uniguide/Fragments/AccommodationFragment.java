@@ -76,7 +76,7 @@ public class AccommodationFragment extends Fragment {
         String city = bundle.getString("CITY");
         Log.d("citytest", "onCreateView: " + city);
 
-        RecyclerView recyclerView = view.findViewById(R.id.recycler);
+        RecyclerView recyclerView = view.findViewById(R.id.accom_recycler);
 
         boolean staggered = PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean("staggeredLayout",false);
 

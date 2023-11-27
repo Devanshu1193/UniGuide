@@ -7,7 +7,7 @@
     tools:context=".Fragments.AccommodationFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler"
+        android:id="@+id/accom_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
