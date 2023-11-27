@@ -379,5 +379,261 @@ public class Accommodations {
                     "Sunday 2:30-3:00",call("2268617581"),message("2268617581"), location("6069 Dufferin Ave, Burnaby, BC V5H 3S9"))
     );
 
+    public static final List<Accommodation> HALIFAX_ACCOMMODATIONS = Arrays.asList(
 
+            // HOUSE #1
+            new Accommodation(R.drawable.halifax_h1, "2 Beds 1 Bath - House", "$746/month", "Available from jan 1st\n" +
+                    "\n" +
+                    "One private living room available to rent in a 2 bedroom apartment. The living room is separated by curtain\n" +
+                    "\n" +
+                    "Great location. Its 900m from the downsview plaza and nearest bus stop is just 250m with direct busses to downtown halifax\n" +
+                    "\n" +
+                    "One guy lives in the other room and one guy lives in living room.\n" +
+                    "\n" +
+                    "We are all from punjab india. Very friendly people\n" +
+                    "\n" +
+                    "Everything is included except wifi which is $30 per person.\n" +
+                    "\n" +
+                    "Parking is available(free)\n" +
+                    "\n" +
+                    "Total rent is 2240 which is divided among 3 people. No more than 3 people are allowed in the apartment.\n" +
+                    "\n" +
+                    "No drinking/ no smoking\n" +
+                    "\n" +
+                    "Its the basement unit in the house\n" +
+                    "\n" +
+                    "Its a fairly small apartment. Text me for more pictures.", call("2269871122"), message("2269871122"), location("9 NS-354, Lower Sackville, NS B4E 1G3")),
+
+            // HOUSE #2
+            new Accommodation(R.drawable.halifax_h2,"3 Beds 3.5 Baths - House", "$2,600/month", "3 bedroom, 3.5 bathrooms semi-detached home in the new and upcoming neighbourhood of Mcintosh in Herring Cove. Beautiful private backyard view of Mcintosh Run.\n" +
+                    "\n" +
+                    "Elegant fixtures and finishing touches throughout the house. Easy access to walking trails, lakes and streams. Open concept with beautiful floors. Beautiful kitchen space with quartz counters and large breakfast bar and pantry. Spacious dining area with patio doors to deck. Large living area with tons of natural light.\n" +
+                    "\n" +
+                    "Heated with baseboard heaters and heat pump providing economic heating and cooling year-round. Attached a driveway fit for 2 cars.\n" +
+                    "\n" +
+                    "No smokers or pets please.\n" +
+                    "\n" +
+                    "Available NOW for a minimum of one year.\n" +
+                    "\n" +
+                    "All blinds and mirrors and appliances will be installed and the unit will be move-in ready for January 1st.\n" +
+                    "\n" +
+                    "Appliances: Fridge, stove and oven, dishwasher, washer, dryer, microwave\n" +
+                    "\n" +
+                    "Air conditioning: yes\n" +
+                    "\n" +
+                    "Utilities: Not included in Rent price. \n" +
+                    "Water and Electricity\n" +
+                    "\n" +
+                    "Please contact me at [hidden information] or DM for a rental application and to book a time for viewing.", call("2269872233"), message("2269872233"), location("11 Hartlen Ave, Halifax, NS B3R 1R5")),
+
+            // HOUSE #3
+            new Accommodation(R.drawable.halifax_h3, "4 Beds 1 Bath - House", "$3,200/month", "Beautiful renovated four- bedroom apartment (3 large rooms that fit king/queen size bed sets and one smaller room that fits a single or double bed) on the main level in a triplex. The apartment offers 1,300 sq ft of living area, a front porch, a back deck, fully fenced sunny back yard.\n" +
+                    "\n" +
+                    "The house is located in Halifax, Cunard St, between Windsor St and Robbie st, within walking distance to Commons, Downtown, Universities, Hospitals, Quinpool shopping area ( Superstore, Canadian Tire, Restaurants, Banks, Gas Stations) Sobeys.\n" +
+                    "\n" +
+                    "Near bus stations that take you directly to DAL or SMU(10 minutes), to Downtown, to Bedford.\n" +
+                    "\n" +
+                    "The apartment was renovated during the past few years and is well maintained year round.\n" +
+                    "The apartment features:\n" +
+                    "Real hardwood/ceramic floors\n" +
+                    "9 foot high ceilings and Victorian characters\n" +
+                    "5 energy saving appliances: Fridge, Stove, Dishwasher, Washer (coin operated $2) & Dryer (coin operated $2)\n" +
+                    "New large bathroom (4 piece)\n" +
+                    "Renovated kitchen\n" +
+                    "New light fixtures\n" +
+                    "Freshly painted\n" +
+                    "\n" +
+                    "Lease Terms: \n" +
+                    "Fixed term lease take over starting on January 1,2024 and ending on August 31,2024 with possibility to renew \n" +
+                    "\n" +
+                    "One small pet (spayed/neutered/ socialized and well behaved) is accepted per apartment.\n" +
+                    "\n" +
+                    "The rent is $3,200 and includes:\n" +
+                    "Heating (natural gas)\n" +
+                    "Hot water(natural gas)\n" +
+                    "Wifi Fibe from Bell\n" +
+                    "Landscaping\n" +
+                    "\n" +
+                    "Electricity account must be taken over and the bill should be expected to be in the range of $120-$130 every two months.\n" +
+                    "\n" +
+                    "Parking is available on request for $100/month.\n" +
+                    "\n" +
+                    "This apartment is feasible just for young professionals with stable employment or mature student. If you are student, you will require to have a Guarantor(s) living and working in Canada with a yearly income of at least $75,000.\n" +
+                    "The property owners will perform credit check, landlord and employment checks.", call("2269873344"), message("2269873344"), location("2150 Robie St, Halifax, NS B3K 4M5")),
+
+            // HOUSE #4
+            new Accommodation(R.drawable.halifax_h4, "4 Beds 2.5 Baths - House","$3,700/month" ,"Available for Rent\n" +
+                    "\n" +
+                    "6208 Lawrence Street Halifax, NS\n" +
+                    "Monthly Rent: $3700.00\n" +
+                    "Included In Rent: Water, Parking (2 Spots)\n" +
+                    "Move In: December or January 1st\n" +
+                    "Pets: Limited\n" +
+                    "\n" +
+                    "Property Details: \n" +
+                    "\n" +
+                    "1,805 sqft\n" +
+                    "3 Levels\n" +
+                    "4 Bedrooms\n" +
+                    "2.5 Bathrooms\n" +
+                    "In-suite Laundry/Mudroom\n" +
+                    "Fridge, Stove, Dishwasher, Over-The-Range Microwave, Propane Stove\n" +
+                    "Included in Rent: Water, Parking (2 Spots)\n" +
+                    "\n" +
+                    "Property Features: \n" +
+                    "\n" +
+                    "Modern High End Finishes \n" +
+                    "Original Architectural Features\n" +
+                    "10ft Ceilings\n" +
+                    "Ductless Heat Pumps \n" +
+                    "Driveway Parking (2 Spots)\n" +
+                    "Propane Stove\n" +
+                    "Private Fenced Backyard\n" +
+                    "Tool Shed\n" +
+                    "Pet-Friendly (limited)\n" +
+                    "Near Major Bus Routes\n" +
+                    "Prime Halifax Peninsula Location\n" +
+                    "\n" +
+                    "This executive 4-bedroom 2.5-bathroom home is located on a quiet tree-lined street in the heart of the Halifax Peninsula. This home has undergone renovations providing high-end finishes while maintaining its character and charm with french doors, high ceilings, original staircase and crown moldings. As you enter the home, you are welcomed into a vestibule finished with slate flooring, original hardwood doors and a transom window. The flow of the layout provides a cozy and comforting feel as you first enter the living room with a propane stove which leads into the formal dining area followed by the renovated and modern kitchen with gas range and quartz countertops. On the back of the home is where you will find a 3-pc bathroom, beautiful mudroom/laundry and direct access to the private fenced backyard with a tool shed, maintained gardens and a large platform deck with a pergola. The upper-level features 3 bedrooms, and a 4-pc bathroom. The basement includes a rec area, a bedroom, a 2-pc bath with painted concrete floors and an unfinished area great for storage. This home has 3 ductless heat pumps combined with electric baseboard heating for comfortable and efficient heating in the winter months and air conditioning in the summer months. This property is within a short walking distance to hospitals, universities and community amenities such as schools, grocery stores, The Halifax Commons, Quinpool Road and The Public Gardens.", call("2269874455"), message("2269874455"), location("6208 Lawrence St, Halifax, NS B3L 1J9"))
+    );
+
+
+    public static final List<Accommodation> NEW_GLASGOW_ACCOMMODATIONS = Arrays.asList(
+
+            // HOUSE #1
+            new Accommodation(R.drawable.new_glasgow_h1, "2 Beds 1 Bath House", "$1,500/month", "Country living at its best. Nicely renovated 2 bedroom mini home located in Eureka. 10 minutes from Stellerton.  Freshly painted, new flooring all new appliances. washer dryer hook up. no pets, no smoking on property.  $1500 plus heat and light. Available immediately.", call("2269875566"), message("2269875566"), location("27 Foster Ave, Stellarton, NS B0K 0A2")),
+
+            // HOUSE #2
+            new Accommodation(R.drawable.new_glasgow_h2, "1 Bed 1 Bath Apartment", "$1,250/month", "Great Location, close to downtown, shopping, restaurants and more.  Good size one bedroom and bath.  Includes heat and hot water.  Dont miss out it wont last long.", call("2269875566"), message("2269875566"), location("369 Pleasant St, New Glasgow, NS B2H 2Z2")),
+
+            // HOUSE #3
+            new Accommodation(R.drawable.new_glasgow_h3, "2 Beds 1 Bath Apartment", "$1,400/month", "Lower unit in duplex is for rent! 2bd/1bth unit, over 1000sq.f of space. Amazing location that is just minutes away from amenities, shopping and parks, just 15min from beaches.\n" +
+                    "\n" +
+                    "$1400/monthly + utilities (electrical heating).\n" +
+                    "\n" +
+                    "Application, confirmation of employment and credit report will be required!", call("2269876677"), message("2269876677"), location("123 Herbert St, New Glasgow, NS B2H 1J6")),
+
+            // HOUSE #4
+            new Accommodation(R.drawable.new_glasgow_h4, "4 Beds 1.5 Baths - House", "$1,500/month", "4 Beds 1.5 Baths - House\n" +
+                    "Four bedroom (4th room currently has hookups for washer and dryer), 1 1/2 bath. Roof is 3 years old. For sale TO BE MOVED at buyers expense. House is being sold as is asking $50,000. Located outside of Pictou.", call("2269877788"), message("2269877788"), location("4 Battist Rd, Pictou, NS B0K 1H0"))
+    );
+
+    public static final List<Accommodation> TORONTO_ACCOMMODATIONS = Arrays.asList(
+
+            // HOUSE #1
+            new Accommodation(R.drawable.toronto_h1,"3 Beds 1 Bath - House", "$2,600/month", "3 Beds 1 Bath - House" +
+                    "\n" +
+                    "9 Janray Dr, Scarborough, ON M1G 1X9, Canada ", call("2269878899"), message("2269878899"), location("5 Janray Dr, Scarborough, ON M1G 1X9")),
+
+            // HOUSE #2
+            new Accommodation(R.drawable.toronto_h2, "4 beds 3 baths House", "$3,200/month", "MAIN FLOOR ONLY ---ALL\n" +
+                    "\n" +
+                    "(Main and upper level only)Explore this rare 4-bedroom, 2-story home with a double garage in the heart of Bridlewood. Located on a quiet, child-safe cul-de-sac, this sun-filled beauty boasts meticulous maintenance, fresh paint, new doors, LED lights, and a new roof. Enjoy the convenience of being steps away from schools, parks, supermarkets, shopping plaza, TTC, and easy access to Hwy 401/404 and all amenities. Don't miss out!\n" +
+                    "\n" +
+                    "3 PARKING SPOTS ONLY",call("2264351122"), message("2264351122"), location("61 Richbourne Ct, Scarborough, ON M1T 1T5")),
+
+            // HOUSE #3
+            new Accommodation(R.drawable.toronto_h3, "2 Beds 1 Bath House", "$2,300/month", "236 Roywood Dr, Toronto, ON\n" + "Available January 1,2024\n" +
+                    "2 Bedroom Basement apartment\n" +
+                    "Utilities included ", call("2264352233"), message("2264352233"), location("236 Roywood Dr, Toronto, ON M3A 2E6")),
+
+            // HOUSE #4
+            new Accommodation(R.drawable.toronto_h4, "3 Beds 2 Baths - House", "$3,300/month", "Location!! Location!! Location!! A Fantastic Opportunity to rent a Beautiful Home in Prime Bendale Community! This Stunning Home Feature 3 Bedrooms, 2 Washrooms. Canadian Oak Hardwood Floors Throughout Main Floor, Modern Open Concept Kitchen W/Quartz Countertops. Open Concept Living & Dining. Pot Lights Throughout. Freshly Painted Throughout Large Lot with Lovely oversize Deck for Your Entertainment. Separate Laundries for Each Floor. Be A Part of A Great Community And Live The location is highly accessible with Walking Distance To Catholic And Public Schools. Minutes To Scarborough Town Centre, Ttc, Go Platform Relocation to Stc, Future Subway Extension, Hospital, Shopping, All Amenities & 401\n" +
+                    "Extras:**Tenants To Pay 60% All Utilities (Hydro, Gas and Water). 2 Car Parking**",call("2264353344"),message("2264353344"),location("922 McCowan Rd, Scarborough, ON M1P 3H6"))
+    );
+
+    public static final List<Accommodation> BRAMPTON_ACCOMMODATIONS = Arrays.asList(
+
+            // HOUSE #1
+            new Accommodation(R.drawable.brampton_h1, "4 Beds 3 Baths - House", "$3,500/month", "Very Spacious and bright 4 bedroom / 3 washroom house for rent located near William Pkwy & Kennedy in the heart of Brampton. Very close to all amenities, groceries, highway and school.\n" +
+                    "\n" +
+                    "Property features :\n" +
+                    "- Bright and Spacious bedrooms with large windows and closets\n" +
+                    "- 3 bedrooms\n" +
+                    "- 2 Washrooms\n" +
+                    "- New kitchen with new stainless steel appliances\n" +
+                    "- Separate laundry\n" +
+                    "- Plenty of storage\n" +
+                    "- Family friendly quiet neighborhood \n" +
+                    "- Two car parking\n" +
+                    "- Smoke free home\n" +
+                    "\n" +
+                    "Requirements : ID Proof, Employment verification and credit report\n" +
+                    "\n" +
+                    "Rent + 60% Utilities\n" +
+                    "No pets allowed", call("2264354455"), message("2264354455"), location("24 Blenheim Dr, Brampton, ON L6Z 1H9")),
+
+            // HOUSE #2
+            new Accommodation(R.drawable.brampton_h2, "4 Beds 4 Baths - House", "$3,400/month", "Detached house \n" +
+                    "4 Bedrooms \n" +
+                    "4 washrooms \n" +
+                    "Laundry on Main level \n" +
+                    "3  car parking \n" +
+                    "Stainless steel appliances \n" +
+                    "Close to Plaza and school",call("2264355566"), message("2264355566"), location("91 Brisdale Dr, Brampton, ON L7A 1S5")),
+
+            // HOUSE #3
+            new Accommodation(R.drawable.brampton_h3, "4 Beds 3 Baths - House", "$3,650/month", "4 Bedroom 3 Washroom\n" +
+                    "- Close to ammenties\n" +
+                    "- Parking Available ", call("2264356677"), message("2264356677"), location("91 Nelson St W, Brampton, ON L6X 1C7")),
+
+            // HOUSE #4
+            new Accommodation(R.drawable.brampton_h4, "3 beds 2 baths House", "$3,200/month", "A beautiful house available on rent near to Sheridan college. \n" +
+                    "\n" +
+                    "- 3 good size bedrooms with B/I Closet\n" +
+                    "- 2 washrooms\n" +
+                    "- Big front and backyard for your kids\n" +
+                    "- Close to Brampton go and other amenities\n" +
+                    "- 4 parkings on driveway\n" +
+                    "\n" +
+                    "To book a viewing please call Prabhdeep Singh.", call("2264357788"), message("2264357788"), location("21 Lockwood Rd, Brampton, ON L6Y 4T7"))
+    );
+
+    public static final List<Accommodation> WINDSOR_ACCOMMODATIONS = Arrays.asList(
+
+            // HOUSE #1
+            new Accommodation(R.drawable.windsor_h1, "3 Beds 1 Bath - House", "$2,000/month", "Cozy 3-Bedroom Rental in South Central Windsor!" +
+                    "\n" +
+                    "This main floor unit offers:\n" +
+                    "\n" +
+                    "3 bedrooms\n" +
+                    "1 bathroom\n" +
+                    "Kitchen and laundry\n" +
+                    "Separate garage\n" +
+                    "Available for immediate move-in. Tenant covers hydro and gas. Rent includes water. Credit and reference checks apply. Call today!", call("2264358899"), message("2264358899"), location("2241 Mercer St, Windsor, ON N8X 3R2")),
+
+            // HOUSE #2
+            new Accommodation(R.drawable.windsor_h2,"2 beds 1 bathroom – House", "$1,395/month", "Very spacious 2 Bed Apartment on rent \n" +
+                    "\n" +
+                    "Only AAA tenants \n" +
+                    "\n" +
+                    "Available- 1st Dec\n" +
+                    "\n" +
+                    "Utilities extra\n" +
+                    "\n" +
+                    "Contact us for viewing.", call("2267568787"), message("2267568787"),location("1200 George Ave, Windsor, ON N8Y 2X6")),
+
+            // HOUSE #3
+            new Accommodation(R.drawable.windsor_h3,"4 Beds 3 Baths - House", "$3,100/month", "Full Home  - 4 Bedroom + Extra Room / 3 Bathrooms / available for rent in Southwood Lakes. \n" +
+                    "\n" +
+                    "Located nearby, St Clair College & Talbot Trail Public School, with quick access too Walker Road, Howard & Dougall. Fantastic Location in South Windsor. \n" +
+                    "\n" +
+                    "Credit Check, References, First and Last Month Rent Required. \n" +
+                    "\n" +
+                    "Asking for $3,100/Month + utilities. \n" +
+                    "\n" +
+                    "Message me for more information.", call("2267569898"), message("2267569898"), location("4383 Concession Rd 6, Windsor, ON N9G 3A3")),
+
+            // HOUSE #4
+            new Accommodation(R.drawable.windsor_h4,"4 Beds 1 Bath - House", "$650/month", " bedrooms available for rent on room-by-room basis. 1 bath, 1 washroom, 1 kitchen with indoor laundry.\n" +
+                    "$650/room, Utilities inclusive.\n" +
+                    "Located on the busiest bus route in the City.\n" +
+                    "10 minutes walk to Metro, and major Grocery Stores Walmart, Food Basics and walking distance to Tecumseh Mall and Saint Claire College. \n" +
+                    "Major Intersections - Tecumseh and Pillette.\n" +
+                    "Good reference, employment and background check required\n" +
+                    "First and last rent required.\n" +
+                    "Parking space available.\n" +
+                    "\n" +
+                    "To arrange for viewing, please contact", call("2267566575"), message("2267566575"), location("2367 Pillette Rd, Windsor, ON N8T 1P7"))
+    );
 }

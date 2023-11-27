@@ -89,37 +89,34 @@ public class AccommodationFragment extends Fragment {
 
         switch (city) {
             case "Calgary":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.CALGARY_ACCOMMODATIONS));
                 break;
             case "Edmonton":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.EDMONTON_ACCOMMODATIONS));
                 break;
             case "Red Deer":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.RED_DEER_ACCOMMODATIONS));
                 break;
             case "Vancouver":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.VANCOUVER_ACCOMMODATIONS));
                 break;
             case "Surrey":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.SURREY_ACCOMMODATIONS));
                 break;
             case "Burnaby":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.BURNABY_ACCOMMODATIONS));
                 break;
             case "Halifax":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
-                break;
-            case "Cape Breton":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.HALIFAX_ACCOMMODATIONS));
                 break;
             case "New Glasgow":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.NEW_GLASGOW_ACCOMMODATIONS));
                 break;
             case "Toronto":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.TORONTO_ACCOMMODATIONS));
                 break;
             case "Brampton":
-                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.BRAMPTON_ACCOMMODATIONS));
                 break;
             case "Windsor":
 //                someText.text = "";

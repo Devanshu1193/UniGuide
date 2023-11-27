@@ -80,7 +80,7 @@ public class InitialStepsFragment extends Fragment {
 
         stepsTitleView.setText(stepsTitle);
         stepsDescView.setText(stepsDesc);
-//        stepsImageView.setImag(R.id.initial_steps_image);
+//        stepsImageView.setImageResource(R.id.initial_steps_image);
 //
 //        if (imageResource != 0){
 //            imageView.setImageResource(imageResource);

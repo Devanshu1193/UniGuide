@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/accommodation_main_list.xml" value="0.31197814941406243" />
+        <entry key="app/src/main/res/layout/accommodation_menu_list.xml" value="0.3695652173913043" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.14336372847011145" />
         <entry key="app/src/main/res/layout/fragment_accommodation.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout/fragment_accommodation_detail.xml" value="0.24010416666666667" />

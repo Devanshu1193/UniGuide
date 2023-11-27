@@ -96,7 +96,7 @@ public class LoginPageFragment extends Fragment {
         StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", "Red Deer");
         StringArray citiesBC = new StringArray(getContext(),"Vancouver", "Surrey", "Burnaby");
         StringArray citiesOntario = new StringArray(getContext(),"Toronto","Brampton","Windsor");
-        StringArray citiesNovaScotia = new StringArray(getContext(), "Halifax","Cape Breton","New Glasgow");
+        StringArray citiesNovaScotia = new StringArray(getContext(), "Halifax","New Glasgow");
 
         // List 0f Universities in ALBERTA
         StringArray collegeInCalgary = new StringArray(getContext(),"University of Calgary", "Bow Valley College", "Alberta University of Arts");
@@ -110,7 +110,6 @@ public class LoginPageFragment extends Fragment {
 
         // List 0f Universities in NOVA SCOTIA
         StringArray collegeInHalifax = new StringArray(getContext(),"Mount Saint Vincent University", "Saint Mary/'s University", "Dalhousie University");
-        StringArray collegeInCapeBreton = new StringArray(getContext(),"Cape Breton University");
         StringArray collegeInNewGlasgow = new StringArray(getContext(),"Cape Breton University", "St. Francis Xavier University", "Nova Scotia Community College");
 
         // List 0f Universities in ONTARIO
@@ -176,9 +175,6 @@ public class LoginPageFragment extends Fragment {
                         break;
                     case "Halifax":
                         collegeSpinner.setAdapter(collegeInHalifax);
-                        break;
-                    case "Cape Breton":
-                        collegeSpinner.setAdapter(collegeInCapeBreton);
                         break;
                     case "New Glasgow":
                         collegeSpinner.setAdapter(collegeInNewGlasgow);
