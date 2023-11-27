@@ -88,6 +88,39 @@ public class AccommodationFragment extends Fragment {
         }
 
         switch (city) {
+            case "Calgary":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Edmonton":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Red Deer":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Vancouver":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Surrey":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Burnaby":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Halifax":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Cape Breton":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "New Glasgow":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Toronto":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
+            case "Brampton":
+                recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));
+                break;
             case "Windsor":
 //                someText.text = "";
                 recyclerView.setAdapter(new CustomAccommodationAdapter(Accommodations.WINDSOR_ACCOMMODATIONS));

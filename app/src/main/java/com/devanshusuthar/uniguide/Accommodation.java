@@ -11,18 +11,24 @@ public class Accommodation {
     private String price;
     private String description;
     private Intent callIntent;
+    private Intent messageIntent;
+    private Intent locationIntent;
+
 
 //    Button callButton = new Button();
 //    Button locationButton = new Button();
 //    Button messageButton = new Button();
 
 
-    public Accommodation(int drawable, String title, String price, String description, Intent callIntent) {
+
+    public Accommodation(int drawable, String title, String price, String description, Intent callIntent, Intent messageIntent, Intent locationIntent) {
         this.drawable = drawable;
         this.title = title;
         this.price = price;
         this.description = description;
         this.callIntent = callIntent;
+        this.messageIntent = messageIntent;
+        this.locationIntent = locationIntent;
     }
 
     public int getDrawable() {
@@ -64,4 +70,20 @@ public class Accommodation {
     public void setCallIntent(Intent callIntent) {
         this.callIntent = callIntent;
     }
+    public Intent getMessageIntent() {
+        return messageIntent;
+    }
+
+    public void setMessageIntent(Intent messageIntent) {
+        this.messageIntent = messageIntent;
+    }
+
+    public Intent getLocationIntent() {
+        return locationIntent;
+    }
+
+    public void setLocationIntent(Intent locationIntent) {
+        this.locationIntent = locationIntent;
+    }
+
 }
