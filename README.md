@@ -6,24 +6,33 @@ It is also for someone who wishes to chanage province and want to settle in othe
 
 ## Guide
 1. Introduction page.
-   
-3. Login page, where the user has to enter his/her name, where he will be traviling like Province, City and college and click on submit button.
-4. Main menu page, where the user will find four options for Accommodations, Supermarkets, Initial Steps and Setting.
-5. Accommodation page, user will find list of accommodation available in the city of their choice.
-6. Supermarket page, user will find bunch of supermarket stores near to their accommodation.
-7. Initial steps page, will get them guidance regarding and location of the places to get their SIN number, where can they open GIC account or Bank account what documents they need.
-8. Settings menu, it will allow the user to change their location if needed.
+2. Login page, where the user has to enter his/her name, where he will be traviling like Province, City and college and click on submit button.
+   ![Screenshot_1701193560](https://github.com/Devanshu1193/UniGuide/assets/146121177/fc4ce7b1-86fc-4ee5-a375-cdd4e05177a5)
+3. Main menu page, where the user will find four options for Accommodations, Supermarkets, Initial Steps and Setting.
+   ![Screenshot_1701193566](https://github.com/Devanshu1193/UniGuide/assets/146121177/a30b01f5-246e-451d-a322-b98d9daa083e)
+4. Accommodation page, user will find list of accommodation available in the city of their choice.
+   ![Screenshot_1701193569](https://github.com/Devanshu1193/UniGuide/assets/146121177/97b387c8-c14c-45c2-9f46-0cd84245b893)
+   ![Screenshot_1701193573](https://github.com/Devanshu1193/UniGuide/assets/146121177/f053a12d-bc3a-4c76-8ce3-a18338231957)
+5. Supermarket page, user will find bunch of supermarket stores near to their accommodation.
+   ![Screenshot_1701193601](https://github.com/Devanshu1193/UniGuide/assets/146121177/9bdbb799-3b14-43eb-a7e1-8434eef7fc28)
+6. Initial steps page, will get them guidance regarding and location of the places to get their SIN number, where can they open GIC account or Bank account what documents they need.
+    ![Screenshot_1701193581](https://github.com/Devanshu1193/UniGuide/assets/146121177/6fa24797-0729-4a0c-bee4-c57afed48aeb)
+7. Settings menu, it will allow the user to change their location if needed.
+   ![Screenshot_1701202931](https://github.com/Devanshu1193/UniGuide/assets/146121177/9bf2f2ca-8c7f-4fa8-9d5a-26d19b281ed6)
 
+   
 ## Prerequisites
 - Gradle, Emulator or Android Phone.
+
 
 ## Liscenses 
 MIT License
 
+
 Copyright (c) 2023 Devanshu Suthar
 
 
-![](https://github.com/Devanshu1193/UniGuide/assets/146121177/6497b183-0234-4456-867b-61ac8d129cba)
+
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
