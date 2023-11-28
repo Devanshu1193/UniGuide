@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.devanshusuthar.uniguide.MainActivity;
 import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.Viewpager.InitialStepsFragment;
 
@@ -66,12 +67,17 @@ public class MainMenuBlankFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity.getAppBar().show();
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_main_menu_blank, container, false);
-        Bundle bundle = getArguments();
-        if (bundle == null) return view;
+        MainActivity.getAppBar().show();
 
         // Accommodation Button
         Button accommodationButton = view.findViewById(R.id.accomodation_button);
@@ -81,7 +87,7 @@ public class MainMenuBlankFragment extends Fragment {
                 // Replace the current fragment with a new one
 //                replaceFragment(new AccommodationFragment());
 
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_accommodation, bundle);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_accommodation);
 
             }
         });
@@ -92,7 +98,7 @@ public class MainMenuBlankFragment extends Fragment {
             @Override
             public void onClick(View view) {
 //                replaceFragment(new InitialStepsFragment());
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_vphost, bundle);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_vphost);
             }
         });
 
@@ -103,7 +109,7 @@ public class MainMenuBlankFragment extends Fragment {
             @Override
             public void onClick(View view) {
 //                replaceFragment(new SupermarketsFragment());
-                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_supermarkets, bundle);
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_supermarkets);
             }
         });
 
@@ -113,7 +119,7 @@ public class MainMenuBlankFragment extends Fragment {
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Navigation.findNavController(view).navigate(R.id.nav_settings);
             }
         });
 

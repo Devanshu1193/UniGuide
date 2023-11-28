@@ -1,5 +1,6 @@
 package com.devanshusuthar.uniguide.Fragments;
 
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.media.PlaybackParams;
@@ -16,6 +17,7 @@ import android.widget.VideoView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import com.devanshusuthar.uniguide.R;
 
@@ -29,7 +31,7 @@ public class SplashScreenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_splash_screen, container, false);
-
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         // Intro Screen
         getActivity().requestWindowFeature(1);
         getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -61,7 +63,13 @@ public class SplashScreenFragment extends Fragment {
         getStartedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Navigation.findNavController(view).navigate(R.id.action_nav_splash_screen_to_nav_login);
+                boolean isSetup = preferences.getInt("completed_setup", 0) == 1;
+
+                if (isSetup) {
+                    Navigation.findNavController(view).navigate(R.id.action_nav_splash_screen_to_nav_main_menu);
+                } else {
+                    Navigation.findNavController(view).navigate(R.id.action_nav_splash_screen_to_nav_login);
+                }
             }
         });
 

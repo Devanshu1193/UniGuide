@@ -1,9 +1,11 @@
 package com.devanshusuthar.uniguide.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.preference.PreferenceManager;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,16 +20,11 @@ import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.StringArray;
 
 /**
- * This is thw login page
+ * This is the login page
  * @author Devanshu
  * @date :
  */
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LoginPageFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class LoginPageFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -81,6 +78,7 @@ public class LoginPageFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login_page, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
 
         MainActivity.getAppBar().show();
 
@@ -91,6 +89,7 @@ public class LoginPageFragment extends Fragment {
         // String Array of Provinces in Canada
         StringArray provinces = new StringArray(getContext(), "Alberta", "British Columbia", "Nova Scotia", "Ontario");
 
+        preferences.edit().putString("province", "No").apply();
 
         // Sting Array of Various Cities in Canada
         StringArray citiesAlberta = new StringArray(getContext(), "Calgary", "Edmonton", "Red Deer");
@@ -203,9 +202,17 @@ public class LoginPageFragment extends Fragment {
         view.findViewById(R.id.main_login_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                StringArray adapter = (StringArray) citySpinner.getAdapter();
+                StringArray cityAdapter = (StringArray) citySpinner.getAdapter();
+                StringArray provinceAdapter = (StringArray) provinceSpinner.getAdapter();
+                StringArray collegeAdapter = (StringArray) collegeSpinner.getAdapter();
+
                 Bundle bundle = new Bundle();
-                bundle.putString("CITY", adapter.getItem(citySpinner.getSelectedItemPosition()));
+                bundle.putString("CITY", cityAdapter.getItem(citySpinner.getSelectedItemPosition()));
+
+                preferences.edit().putInt("completed_setup", 1)
+                        .putString("province", provinceAdapter.getItem(provinceSpinner.getSelectedItemPosition()))
+                        .putString("college", collegeAdapter.getItem(collegeSpinner.getSelectedItemPosition()))
+                        .putString("city", cityAdapter.getItem(citySpinner.getSelectedItemPosition())).apply();
 
                 Navigation.findNavController(view).navigate(R.id.action_nav_login_to_mainMenuBlankFragment, bundle);
             }

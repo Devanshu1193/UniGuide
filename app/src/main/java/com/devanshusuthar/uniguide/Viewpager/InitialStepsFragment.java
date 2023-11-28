@@ -1,8 +1,10 @@
 package com.devanshusuthar.uniguide.Viewpager;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +31,7 @@ public class InitialStepsFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_STEPS_DESC = "stepsDesc";
     private static final String ARG_STEPS_TITLE = "stepsTitle";
-    private static final int ARG_STEPS_IMAGE = Integer.parseInt("stepsImage");
+    private static final String ARG_STEPS_IMAGE = "stepsImage";
 
     // TODO: Rename and change types of parameters
     private String stepsDesc;
@@ -54,7 +56,7 @@ public class InitialStepsFragment extends Fragment {
         Bundle args = new Bundle();
         args.putString(ARG_STEPS_DESC, stepsDesc);
         args.putString(ARG_STEPS_TITLE, stepsTitle);
-        args.putInt(String.valueOf(ARG_STEPS_IMAGE), stepsImage);
+        args.putInt(ARG_STEPS_IMAGE, stepsImage);
         fragment.setArguments(args);
         return fragment;
     }
@@ -65,7 +67,7 @@ public class InitialStepsFragment extends Fragment {
         if (getArguments() != null) {
             stepsDesc = getArguments().getString(ARG_STEPS_DESC);
             stepsTitle = getArguments().getString(ARG_STEPS_TITLE);
-            stepsImage = getArguments().getInt(String.valueOf(ARG_STEPS_IMAGE));
+            stepsImage = getArguments().getInt(ARG_STEPS_IMAGE);
         }
     }
 
@@ -87,7 +89,14 @@ public class InitialStepsFragment extends Fragment {
 //        }
 
 
+        SharedPreferences provincePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String province = provincePreferences.getString("province", "Ontario");
 
+        SharedPreferences cityPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String city = cityPreferences.getString("city", "Windsor");
+
+        SharedPreferences collegePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String college = collegePreferences.getString("college", "Saint Clair College");
 
         return view;
     }

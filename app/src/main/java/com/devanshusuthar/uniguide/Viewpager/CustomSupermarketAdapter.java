@@ -53,12 +53,10 @@ public class CustomSupermarketAdapter extends ArrayAdapter<Supermarket> {
         supermarket_image.setImageResource(items.getDrawable());
         supermarket_time.setText(items.getTime());
         supermarket_call_button.setOnClickListener(view -> {
-            Bundle bundle = new Bundle();
-            bundle.putParcelable("CALL_INTENT", items.getCallIntent());
+            getContext().startActivity(items.getCallIntent());
         });
         supermarket_location_button.setOnClickListener(view -> {
-            Bundle bundle = new Bundle();
-            bundle.putParcelable("LOCATION_INTENT", items.getLocationIntent());
+            getContext().startActivity(items.getLocationIntent());
         });
 
         supermarket_ratings.setRating((float) items.getRating());

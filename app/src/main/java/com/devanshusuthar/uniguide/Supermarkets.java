@@ -3,6 +3,7 @@ package com.devanshusuthar.uniguide;
 import android.content.Intent;
 import android.net.Uri;
 
+import java.net.URLEncoder;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class Supermarkets {
 
     private static Intent location(String location) {
         return new Intent(Intent.ACTION_VIEW, Uri.parse(
-                "geo:" + location
+                "geo:0,0?q=" + location.replace(" ", "+")
         ));
     }
 

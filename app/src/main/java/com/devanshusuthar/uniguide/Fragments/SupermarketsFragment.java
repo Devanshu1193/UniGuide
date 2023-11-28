@@ -1,5 +1,6 @@
 package com.devanshusuthar.uniguide.Fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,11 +15,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.devanshusuthar.uniguide.Accommodations;
 import com.devanshusuthar.uniguide.R;
 import com.devanshusuthar.uniguide.Supermarket;
+import com.devanshusuthar.uniguide.Supermarkets;
+import com.devanshusuthar.uniguide.Viewpager.CustomAccommodationAdapter;
 import com.devanshusuthar.uniguide.Viewpager.CustomSupermarketAdapter;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -70,9 +76,54 @@ public class SupermarketsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         View view = inflater.inflate(R.layout.fragment_supermarkets, container, false);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+
+        String city = preferences.getString("city", "Windsor");
         ListView listView = view.findViewById(R.id.supermarket_listView);
-        ArrayList<Supermarket> supermarkets = new ArrayList<>();
+        List<Supermarket> supermarkets;
+
+        switch (city) {
+                case "Calgary":
+                    supermarkets = Supermarkets.CALGARY_SUPERMARKET;
+                    break;
+                case "Edmonton":
+                    supermarkets = Supermarkets.EDMONTON_SUPERMARKET;
+                    break;
+                case "Red Deer":
+                    supermarkets = Supermarkets.RED_DEER_SUPERMARKET;
+                    break;
+                case "Vancouver":
+                    supermarkets = Supermarkets.VANCOUVER_SUPERMARKET;
+                    break;
+                case "Surrey":
+                    supermarkets = Supermarkets.SURREY_SUPERMARKET;
+                    break;
+                case "Burnaby":
+                    supermarkets = Supermarkets.BURNABY_SUPERMARKET;
+                    break;
+                case "Halifax":
+                    supermarkets = Supermarkets.HALIFAX_SUPERMARKET;
+                    break;
+                case "New Glasgow":
+                    supermarkets = Supermarkets.NEW_GLASGOW_SUPERMARKET;
+                    break;
+                case "Toronto":
+                    supermarkets = Supermarkets.TORONTO_SUPERMARKET;
+                    break;
+                case "Brampton":
+                    supermarkets = Supermarkets.BRAMPTON_SUPERMARKET;
+                    break;
+                case "Windsor":
+//                someText.text = "";
+                    supermarkets = Supermarkets.WINDSOR_SUPERMARKET;
+                    break;
+                default:
+                    supermarkets = Collections.emptyList();
+            }
+        
         CustomSupermarketAdapter adapter = new CustomSupermarketAdapter(getContext(), supermarkets);
         listView.setAdapter(adapter);
         return view;
