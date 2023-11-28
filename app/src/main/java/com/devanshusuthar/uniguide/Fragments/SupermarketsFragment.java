@@ -3,12 +3,22 @@ package com.devanshusuthar.uniguide.Fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.preference.PreferenceManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.devanshusuthar.uniguide.R;
+import com.devanshusuthar.uniguide.Supermarket;
+import com.devanshusuthar.uniguide.Viewpager.CustomSupermarketAdapter;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,8 +71,10 @@ public class SupermarketsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_supermarkets, container, false);
-
-
+        ListView listView = view.findViewById(R.id.supermarket_listView);
+        ArrayList<Supermarket> supermarkets = new ArrayList<>();
+        CustomSupermarketAdapter adapter = new CustomSupermarketAdapter(getContext(), supermarkets);
+        listView.setAdapter(adapter);
         return view;
     }
 }

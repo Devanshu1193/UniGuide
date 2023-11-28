@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/supermarket_listView_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:width="150dp"
+        android:height="150dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/supermarket_listView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="sdibus"
+            android:textAlignment="inherit"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/supermarket_listView_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:text="dfbownb" />
+
+        <TextView
+            android:id="@+id/supermarket_listView_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8sp"
+            android:text="dfbownb" />
+
+        <RatingBar
+            android:id="@+id/supermarket_listView_ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:isIndicator="false"
+            android:paddingLeft="2dp"
+            android:theme="@style/RatingBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/supermarket_listView_callButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                android:hapticFeedbackEnabled="false"
+                app:srcCompat="@drawable/ic_baseline_call_24" />
+
+            <ImageButton
+                android:id="@+id/supermarket_listView_locationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/cardview_shadow_end_color"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
