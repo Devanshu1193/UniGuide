@@ -38,4 +38,14 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="credits_button">Credits</string>
+    <string name="credit_facebook_title">Facebook</string>
+    <string name="credit_facebook_link"><![CDATA[https://www.facebook.com/marketplace/110574778966847/search/?query=Rent%20house&exact=false]]></string>
+    <string name="credit_google_title">Google</string>
+    <string name="credit_resources_title">Resources</string>
+    <string name="credit_google_link">https://www.google.com/</string>
+    <string name="credit_canva_title">Canva</string>
+    <string name="credit_canva_link">https://www.canva.com/en_in/</string>
+    <string name="nav_settings_title">Settings</string>
+    <string name="nav_contact_us">Contact Us</string>
 </resources>

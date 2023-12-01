@@ -65,6 +65,20 @@
         app:strokeWidth="3dp" />
 
     <Button
+        android:id="@+id/credits_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/credits_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <Button
         android:id="@+id/settings_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

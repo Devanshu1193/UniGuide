@@ -123,6 +123,14 @@ public class MainMenuBlankFragment extends Fragment {
             }
         });
 
+        // Credits Button
+        Button creditsButton = view.findViewById(R.id.credits_button);
+        creditsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).navigate(R.id.action_nav_main_menu_to_nav_credits);
+            }
+        });
 
         return view;
     }

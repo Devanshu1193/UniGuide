@@ -39,6 +39,9 @@
         <action
             android:id="@+id/action_nav_main_menu_to_nav_vphost"
             app:destination="@id/nav_vphost" />
+        <action
+            android:id="@+id/action_nav_main_menu_to_nav_credits"
+            app:destination="@id/nav_credits" />
     </fragment>
     <fragment
         android:id="@+id/nav_supermarkets"
@@ -64,4 +67,14 @@
         android:id="@+id/nav_settings"
         android:name="com.devanshusuthar.uniguide.Fragments.SettingsFragment"
         android:label="Settings" />
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.devanshusuthar.uniguide.Fragments.CreditsFragment"
+        android:label="Credits"
+        tools:layout="@layout/fragment_credits" />
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.devanshusuthar.uniguide.Fragments.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
 </navigation>
