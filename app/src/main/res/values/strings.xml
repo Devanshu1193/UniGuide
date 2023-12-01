@@ -48,4 +48,8 @@
     <string name="credit_canva_link">https://www.canva.com/en_in/</string>
     <string name="nav_settings_title">Settings</string>
     <string name="nav_contact_us">Contact Us</string>
+    <string name="info_title">Stay in touch</string>
+    <string name="info_facebook_button">Connect</string>
+    <string name="info_instagram_button">Follow</string>
+    <string name="info_gmail_button">mail</string>
 </resources>

@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/fragment_accommodation.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout/fragment_accommodation_detail.xml" value="0.24010416666666667" />
         <entry key="app/src/main/res/layout/fragment_accomodation.xml" value="0.275" />
+        <entry key="app/src/main/res/layout/fragment_contact_us.xml" value="0.21770833333333334" />
         <entry key="app/src/main/res/layout/fragment_credits.xml" value="0.30572916666666666" />
         <entry key="app/src/main/res/layout/fragment_initial_steps.xml" value="0.271875" />
         <entry key="app/src/main/res/layout/fragment_login_page.xml" value="0.275" />
