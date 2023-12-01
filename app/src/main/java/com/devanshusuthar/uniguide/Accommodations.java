@@ -22,7 +22,7 @@ public class Accommodations {
 
     private static Intent location(String location) {
         return new Intent(Intent.ACTION_VIEW, Uri.parse(
-                "geo:" + location
+                "geo:0,0?q=" + location.replace(" ", "+")
         ));
     }
 

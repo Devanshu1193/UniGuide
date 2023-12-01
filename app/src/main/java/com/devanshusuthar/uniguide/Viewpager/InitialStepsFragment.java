@@ -82,21 +82,16 @@ public class InitialStepsFragment extends Fragment {
 
         stepsTitleView.setText(stepsTitle);
         stepsDescView.setText(stepsDesc);
-//        stepsImageView.setImageResource(R.id.initial_steps_image);
+
 //
-//        if (imageResource != 0){
-//            imageView.setImageResource(imageResource);
-//        }
-
-
-        SharedPreferences provincePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        String province = provincePreferences.getString("province", "Ontario");
-
-        SharedPreferences cityPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        String city = cityPreferences.getString("city", "Windsor");
-
-        SharedPreferences collegePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
-        String college = collegePreferences.getString("college", "Saint Clair College");
+//        SharedPreferences provincePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+//        String province = provincePreferences.getString("province", "Ontario");
+//
+//        SharedPreferences cityPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+//        String city = cityPreferences.getString("city", "Windsor");
+//
+//        SharedPreferences collegePreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+//        String college = collegePreferences.getString("college", "Saint Clair College");
 
         return view;
     }

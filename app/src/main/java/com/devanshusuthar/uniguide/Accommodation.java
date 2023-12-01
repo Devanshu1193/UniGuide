@@ -15,12 +15,6 @@ public class Accommodation {
     private Intent locationIntent;
 
 
-//    Button callButton = new Button();
-//    Button locationButton = new Button();
-//    Button messageButton = new Button();
-
-
-
     public Accommodation(int drawable, String title, String price, String description, Intent callIntent, Intent messageIntent, Intent locationIntent) {
         this.drawable = drawable;
         this.title = title;
