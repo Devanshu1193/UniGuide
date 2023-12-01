@@ -51,7 +51,7 @@ public class InitialStepsFragment extends Fragment {
      * @return A new instance of fragment InitialStepsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static InitialStepsFragment newInstance(String stepsTitle, String stepsDesc, int stepsImage) {
+    public static InitialStepsFragment newInstance(String stepsTitle, int stepsImage,String stepsDesc) {
         InitialStepsFragment fragment = new InitialStepsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_STEPS_DESC, stepsDesc);
