@@ -1,5 +1,7 @@
 package com.devanshusuthar.uniguide.Fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.devanshusuthar.uniguide.R;
 
@@ -63,6 +66,39 @@ public class InfoFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_info, container, false);
 
+        Button facebookButton = view.findViewById(R.id.info_facbook_button);
+        facebookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent facebookIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/uniguide"));
+                startActivity(Intent.createChooser(facebookIntent, "Share through"));
+
+
+            }
+        });
+
+        Button instaButton = view.findViewById(R.id.info_instagram_button);
+        instaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent instaIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/uniguide"));
+                startActivity(Intent.createChooser(instaIntent, "Share through"));
+            }
+        });
+
+        Button mailButton = view.findViewById(R.id.info_gmail_button);
+        mailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse("mailto:"));
+                intent.putExtra(Intent.EXTRA_EMAIL, "uniguide@gmail.com");
+                intent.putExtra(Intent.EXTRA_SUBJECT,"I would like to get some guidance on the following:");
+
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

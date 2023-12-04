@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/basic"
+
     android:orientation="vertical"
     tools:context=".Fragments.LoginPageFragment">
 
@@ -25,6 +26,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -51,8 +53,6 @@
             android:fontFamily="@font/assistant_semibold"
             android:hint="Enter your name"
             android:inputType="textPersonName"
-            android:paddingLeft="10sp"
-            android:paddingRight="30sp"
             android:selectAllOnFocus="false"
             android:shadowColor="#E3D4D4"
             android:textColor="#FFFDFD"
@@ -64,6 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -97,6 +98,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -124,6 +126,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -151,6 +154,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="10dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -180,8 +184,13 @@
         android:id="@+id/main_login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_shadow_end_color"
         android:text="@string/login_button"
-        android:textStyle="bold" />
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/white"
+        app:strokeWidth="4dp" />
 
 
 </LinearLayout>
