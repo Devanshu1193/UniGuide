@@ -104,9 +104,9 @@ public class Supermarkets {
 
     public static final List<Supermarket> WINDSOR_SUPERMARKET = Arrays.asList(
             new Supermarket(R.drawable.windsor_sm1, "Walmart Supercenter", "3120 Dougall Ave", 3.8,"7:00 AM - 10:00 PM",call("5199698121"),location("3120 Dougall Ave, Windsor, ON N9E 1S7")),
-            new Supermarket(R.drawable.windsor_sm1, "Walmart Supercenter", "3120 Dougall Ave", 3.8,"7:00 AM - 10:00 PM",call("5199698121"),location("3120 Dougall Ave, Windsor, ON N9E 1S7")),
-            new Supermarket(R.drawable.windsor_sm1, "Walmart Supercenter", "3120 Dougall Ave", 3.8,"7:00 AM - 10:00 PM",call("5199698121"),location("3120 Dougall Ave, Windsor, ON N9E 1S7")),
-            new Supermarket(R.drawable.windsor_sm1, "Walmart Supercenter", "3120 Dougall Ave", 3.8,"7:00 AM - 10:00 PM",call("5199698121"),location("3120 Dougall Ave, Windsor, ON N9E 1S7")),
-            new Supermarket(R.drawable.windsor_sm1, "Walmart Supercenter", "3120 Dougall Ave", 3.8,"7:00 AM - 10:00 PM",call("5199698121"),location("3120 Dougall Ave, Windsor, ON N9E 1S7"))
+            new Supermarket(R.drawable.windsor_sm2, "Real Canadian Superstore Dougall Avenue", "2430 Dougall Ave", 3.8,"7:00 AM - 11:00 PM",call("5199721010"),location("2430 Dougall Ave, Windsor, ON N8X 1T2")),
+            new Supermarket(R.drawable.windsor_sm3, "Metro", "3100 Howard Ave", 4.4,"8:00 AM - 10:00 PM",call("5199727806"),location("3100 Howard Ave, Windsor, ON N8X 3Y8")),
+            new Supermarket(R.drawable.windsor_sm4, "Food Basics", "2750 Tecumseh Rd W", 4.1,"7:00 AM - 8:00 PM",call("5192561891"),location("2750 Tecumseh Rd W, Windsor, ON N9B 3P9")),
+            new Supermarket(R.drawable.windsor_sm5, "FreshCo Tecumseh & McDougall", "300 Tecumseh Rd E", 4.1,"7:00 AM - 10:00 PM",call("5192535495"),location(" 300 Tecumseh Rd E, Windsor, ON N8X 5E8"))
     );
 }

@@ -12,7 +12,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.devanshusuthar.uniguide.R;
-
+/**
+ * This is the Accommodation Fragment
+ * @author Devanshu
+ */
 public class AccommodationDetailFragment extends Fragment {
 
 

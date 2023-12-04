@@ -22,7 +22,6 @@ import com.devanshusuthar.uniguide.StringArray;
 /**
  * This is the login page
  * @author Devanshu
- * @date :
  */
 
 public class LoginPageFragment extends Fragment {

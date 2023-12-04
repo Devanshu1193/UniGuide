@@ -9,23 +9,12 @@
     android:orientation="vertical"
     tools:context=".Fragments.AccommodationFragment">
 
-    <TextView
-        android:id="@+id/main_menu_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:fontFamily="@font/alata"
-        android:text="@string/main_menu_title"
-        android:textAlignment="center"
-        android:textColor="#FFFEFE"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
     <Button
         android:id="@+id/accomodation_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="70dp"
         android:backgroundTint="@color/cardview_shadow_end_color"
         android:paddingTop="6dp"

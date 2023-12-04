@@ -56,12 +56,12 @@
     <fragment
         android:id="@+id/nav_vphost"
         android:name="com.devanshusuthar.uniguide.Viewpager.VPHostFragment"
-        android:label="fragment_v_p_host"
+        android:label="Initial Steps"
         tools:layout="@layout/fragment_v_p_host" />
     <fragment
         android:id="@+id/nav_accomDetail"
         android:name="com.devanshusuthar.uniguide.Fragments.AccommodationDetailFragment"
-        android:label="fragment_accommodation_detail"
+        android:label="Details"
         tools:layout="@layout/fragment_accommodation_detail" />
     <fragment
         android:id="@+id/nav_settings"
