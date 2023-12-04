@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <ListPreference
+            android:entries="@array/provinces"
+            android:entryValues="@array/provinces"
+            android:key="province"
+            android:title="Province"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Windsor"
+            android:entries="@array/cities"
+            android:entryValues="@array/cities"
+            android:key="city"
+            android:title="City"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Saint Clair College"
+            android:entries="@array/colleges"
+            android:entryValues="@array/colleges"
+            android:key="college"
+            android:title="College"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

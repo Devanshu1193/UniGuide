@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basic"
+
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginPageFragment">
+
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant_semibold"
+        android:paddingTop="40sp"
+        android:paddingBottom="40sp"
+        android:text="@string/login_title"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_name_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_fullName_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/name_textField"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:ems="6"
+            android:fontFamily="@font/assistant_semibold"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:shadowColor="#E3D4D4"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#A5A1A1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_country_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_country_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/country_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="7"
+            android:fontFamily="@font/assistant_semibold"
+            android:paddingLeft="10sp"
+            android:paddingRight="30sp"
+            android:text="@string/canada_text"
+            android:textColor="#FFFDFD"
+            android:textColorHint="#A5A1A1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_province_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_province_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/province_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:outlineProvider="paddedBounds"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_city_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_city_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/city_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:outlineProvider="paddedBounds"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_college_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/login_college_title"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/college_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/spinner_dropdown_background"
+            android:outlineProvider="paddedBounds"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/login_button"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/white"
+        app:strokeWidth="4dp" />
+
+
+</LinearLayout>

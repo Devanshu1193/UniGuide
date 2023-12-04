@@ -22,4 +22,10 @@
     <style name="Theme.UniGuide.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.UniGuide.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#838181</item>
+        <item name="colorControlActivated">#FFD043</item>
+    </style>
+
 </resources>

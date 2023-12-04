@@ -1,0 +1,56 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="provinces">
+        <item>Alberta</item>
+        <item>British Columbia</item>
+        <item>Nova Scotia</item>
+        <item>Ontario</item>
+    </string-array>
+
+    <string-array name="cities">
+        <item>Calgary</item>
+        <item>Edmonton</item>
+        <item>Red Deer</item>
+        <item>Vancouver</item>
+        <item>Surrey</item>
+        <item>Burnaby</item>
+        <item>Toronto</item>
+        <item>Brampton</item>
+        <item>Windsor</item>
+        <item>Halifax</item>
+        <item>New Glasgow</item>
+    </string-array>
+
+    <string-array name="colleges">
+        <item>University of Calgary</item>
+        <item>Bow Valley College</item>
+        <item>Alberta University of Arts</item>
+        <item>University of Alberta</item>
+        <item>MacEwan University</item>
+        <item>Concordia University of Edmonton</item>
+        <item>Red Deer College</item>
+        <item>The University of British Columbia</item>
+        <item>Simon Fraser University</item>
+        <item>Capilano University</item>
+        <item>CDI College Surrey</item>
+        <item>Douglas College</item>
+        <item>Brighton College</item>
+        <item>Fraser International College</item>
+        <item>British Columbia Institute of Tech.</item>
+        <item>Alexander College</item>
+        <item>Mount Saint Vincent University</item>
+        <item>Saint Mary\'s University</item>
+        <item>Dalhousie University</item>
+        <item>Cape Breton University</item>
+        <item>St. Francis Xavier University</item>
+        <item>Nova Scotia Community College</item>
+        <item>Seneca College</item>
+        <item>University of Toronto</item>
+        <item>Humber College</item>
+        <item>Sheridan College</item>
+        <item>Centennial College</item>
+        <item>Cambrian College</item>
+        <item>University of Windsor</item>
+        <item>Saint Clair College</item>
+    </string-array>
+</resources>

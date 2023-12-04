@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basic"
+    android:orientation="vertical"
+    tools:context=".Fragments.AccommodationFragment">
+
+    <Button
+        android:id="@+id/accomodation_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:paddingTop="6dp"
+        android:text="@string/accomodation_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/initial_steps_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/initial_steps_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/supermarket_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/supermarket_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/credits_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/credits_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:text="@string/settings_button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+</LinearLayout>
