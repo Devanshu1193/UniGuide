@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +24,7 @@ import java.util.List;
 
 public class CustomAccommodationAdapter extends RecyclerView.Adapter<CustomAccommodationAdapter.CustomViewHolder> {
     private List<Accommodation> accommodations;
+    private Context context;
 
     public CustomAccommodationAdapter(List<Accommodation> accommodations) {
         this.accommodations = accommodations;
@@ -33,15 +36,20 @@ public class CustomAccommodationAdapter extends RecyclerView.Adapter<CustomAccom
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.accommodation_menu_list,parent,false);
 
+        this.context = parent.getContext();
         return new CustomViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         Accommodation accommodation = accommodations.get(position);
+        Animation animation1 = AnimationUtils.loadAnimation(context, R.anim.slide_in);
+        animation1.setStartOffset(position * 100L);
+
         holder.title.setText(accommodation.getTitle());
         holder.price.setText(accommodation.getPrice());
         holder.image.setImageResource(accommodation.getDrawable());
+        holder.itemView.startAnimation(animation1);
 
         holder.itemView.setOnClickListener((v) -> {
             Bundle bundle = new Bundle();

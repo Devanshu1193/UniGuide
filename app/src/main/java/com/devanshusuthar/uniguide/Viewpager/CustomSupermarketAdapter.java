@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -32,6 +34,9 @@ public class CustomSupermarketAdapter extends ArrayAdapter<Supermarket> {
 
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Supermarket items = getItem(position);
+
+        Animation animation1 = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in);
+        animation1.setStartOffset(position * 100L);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.supermarket_listview, parent, false);
@@ -61,6 +66,7 @@ public class CustomSupermarketAdapter extends ArrayAdapter<Supermarket> {
 
         supermarket_ratings.setRating((float) items.getRating());
 
+        convertView.startAnimation(animation1);
         return convertView;
     }
 }
