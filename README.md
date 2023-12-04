@@ -6,19 +6,26 @@ It is also for someone who wishes to chanage province and want to settle in othe
 
 ## Guide
 1. Introduction page.
+   ![first](https://github.com/Devanshu1193/UniGuide/assets/146121177/ad997c17-801f-4d08-8740-0d439f26d460)
 2. Login page, where the user has to enter his/her name, where he will be traviling like Province, City and college and click on submit button.
-   ![Screenshot_1701193560](https://github.com/Devanshu1193/UniGuide/assets/146121177/fc4ce7b1-86fc-4ee5-a375-cdd4e05177a5)
+   ![Screenshot_1701704318](https://github.com/Devanshu1193/UniGuide/assets/146121177/1d53ffce-95a2-41ba-a675-c96ce9289eec)
 3. Main menu page, where the user will find four options for Accommodations, Supermarkets, Initial Steps and Setting.
-   ![Screenshot_1701193566](https://github.com/Devanshu1193/UniGuide/assets/146121177/a30b01f5-246e-451d-a322-b98d9daa083e)
+   ![Screenshot_1701704329](https://github.com/Devanshu1193/UniGuide/assets/146121177/91e2e2cb-f248-4842-89a9-ac7eb714c969)
 4. Accommodation page, user will find list of accommodation available in the city of their choice.
-   ![Screenshot_1701193569](https://github.com/Devanshu1193/UniGuide/assets/146121177/97b387c8-c14c-45c2-9f46-0cd84245b893)
-   ![Screenshot_1701193573](https://github.com/Devanshu1193/UniGuide/assets/146121177/f053a12d-bc3a-4c76-8ce3-a18338231957)
+   ![Screenshot_1701704333](https://github.com/Devanshu1193/UniGuide/assets/146121177/b74b2591-e134-42b1-8ddd-449201df2fe3)
 5. Supermarket page, user will find bunch of supermarket stores near to their accommodation.
-   ![Screenshot_1701193601](https://github.com/Devanshu1193/UniGuide/assets/146121177/9bdbb799-3b14-43eb-a7e1-8434eef7fc28)
+  ![Screenshot_1701704341](https://github.com/Devanshu1193/UniGuide/assets/146121177/4499d66c-4042-4b98-a2f4-f9a4b97927c4)
 6. Initial steps page, will get them guidance regarding and location of the places to get their SIN number, where can they open GIC account or Bank account what documents they need.
-    ![Screenshot_1701193581](https://github.com/Devanshu1193/UniGuide/assets/146121177/6fa24797-0729-4a0c-bee4-c57afed48aeb)
+   ![Screenshot_1701704337](https://github.com/Devanshu1193/UniGuide/assets/146121177/cd152b32-195d-419f-ac2a-e2dd0089773f)
 7. Settings menu, it will allow the user to change their location if needed.
-   ![Screenshot_1701202931](https://github.com/Devanshu1193/UniGuide/assets/146121177/9bf2f2ca-8c7f-4fa8-9d5a-26d19b281ed6)
+   ![Screenshot_1701704349](https://github.com/Devanshu1193/UniGuide/assets/146121177/a81ba913-aa13-4b9d-b697-9b18ccc1bbd6)
+8. Information Page.
+   ![Screenshot_1701704353](https://github.com/Devanshu1193/UniGuide/assets/146121177/34f260aa-c709-4969-95d9-3d8523cd0488)
+9. Credits Page.
+   ![Screenshot_1701704345](https://github.com/Devanshu1193/UniGuide/assets/146121177/74b95c92-dfeb-4693-a494-0fede80f65c9)
+    
+
+
 
    
 ## Prerequisites
